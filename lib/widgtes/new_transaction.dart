@@ -53,11 +53,11 @@ class _NewTransactoinState extends State<NewTransactoin> {
       child: Card(
         elevation: 2,
         child: Padding(
-          padding: const EdgeInsets.only(
+          padding: EdgeInsets.only(
             top: 10,
             right: 10,
             left: 10,
-            bottom: 10,
+            bottom: 10 + MediaQuery.of(context).viewInsets.bottom,
           ),
           child: Column(
             children: [
